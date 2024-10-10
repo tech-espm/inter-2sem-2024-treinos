@@ -33,3 +33,15 @@ html, body {
 	color: white;
 	text-decoration: none;
 }
+
+.navbar {
+	background-color: white !important;
+}
+
+.navbar-brand {
+	color: magenta;
+}
+
+.nav-link {
+	color: magenta;
+}
