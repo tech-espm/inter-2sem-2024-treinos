@@ -21,6 +21,8 @@ html, body {
 .conteudo {
 	/* Para fazer o rodapé ficar sempre na parte inferior da página ;) */
 	flex: 1 1 auto;
+	text-align: center;
+	color: #a844fc;
 }
 
 .rodape {
@@ -39,9 +41,12 @@ html, body {
 }
 
 .navbar-brand {
-	color: magenta;
+	color: #a844fc;
 }
 
 .nav-link {
-	color: magenta;
+	color: #a844fc;
 }
+
+
+
