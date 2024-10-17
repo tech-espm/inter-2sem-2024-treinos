@@ -38,6 +38,7 @@ html, body {
 
 .navbar {
 	background-color: white !important;
+	border-bottom: 2px solid #a844fc !important;
 }
 
 .navbar-brand {
@@ -57,4 +58,5 @@ html, body {
 	text-decoration: none;
 	
 }
+
 
