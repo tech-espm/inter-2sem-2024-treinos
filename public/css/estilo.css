@@ -49,4 +49,12 @@ html, body {
 }
 
 
+.botao1{
+	color: white;
+	background-color:#a844fc;
+	border-radius: 7px;
+	padding: 7px 20px;
+	text-decoration: none;
+	
+}
 
