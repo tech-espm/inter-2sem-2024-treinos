@@ -37,6 +37,14 @@ class IndexRoute {
 		res.render("index/meusTreinos", opcoes);
 	}
 
+	public async cadastro(req: app.Request, res: app.Response) {
+		let opcoes = {
+			titulo: "Cadastre-se"
+		};
+
+		res.render("index/cadastro", opcoes);
+	}
+
 	public async produtos(req: app.Request, res: app.Response) {
 		let produtoA = {
 			id: 1,
