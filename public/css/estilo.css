@@ -27,12 +27,12 @@ html, body {
 
 .rodape {
 	text-align: center;
-	background-color: black;
 	padding: 2rem;
+	border-top: 2px solid #a844fc
 }
 
 .link-rodape, .link-rodape:hover {
-	color: white;
+	color: #969696;
 	text-decoration: none;
 }
 
