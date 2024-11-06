@@ -1,7 +1,69 @@
+<style>
+	.input-custom {
+		width: 200px; /* ajuste conforme necessário */ 
+		padding: 5px;
+		border: 2px solid #ddd;
+		border-radius: 20px;
+		outline: none;
+		font-size: 12px;
+		color: #aaa;
+	  }
+	
+	  /* Cor da borda ao focar */
+	  .input-custom:focus {
+		border-color: #ccc;
+	  }
+	
+	  /* Placeholder */
+	  .input-custom::placeholder {
+		color: #ddd;
+	  }
+	
+	.padding-div {
+		padding: 6px;
+	}
+
+	.botao2 {
+		color: white;
+		background-color:#a844fc;
+		border: 2px solid;
+		padding: 5px;
+		border-radius: 20px;
+		width: 200px;
+		font-size: 15px;
+		text-decoration: none;
+		outline: none;
+		font-weight: bold;
+	}
+	
+</style>
+
+
 <div class="container-fluid">
 
 	<h1>
 		Cadastro
 	</h1>
+
+	<div class="padding-div">
+		<input type="text" class="input-custom" placeholder="Usuário">
+	</div>
+	<div class="padding-div">
+		<input type="text" class="input-custom" placeholder="Nome Completo">
+	</div>
+	<div class="padding-div">
+		<input type="date" class="input-custom" placeholder="Data de Nascimento">
+	</div>
+	<div class="padding-div">
+		<input type="email" class="input-custom" placeholder="Email">
+	</div>
+	<div class="padding-div">
+		<input type="text" class="input-custom" placeholder="Senha">
+	</div>
+	<div class="padding-div">
+		<p>
+			<a href="..." class="botao2">Fazer Cadastro</a>
+		</p>
+	</div>
 
 </div>
