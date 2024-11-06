@@ -60,3 +60,28 @@ html, body {
 }
 
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.text-primary {
+    color: #a844fc !important;
+}
+
+.border {
+    border-color:  #a844fc ;
+}
+
+.fundo-branco {
+    background-color: #ffffff ;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.cor-texto-sobre {
+	color: black;
+}
+
