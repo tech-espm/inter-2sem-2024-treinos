@@ -53,10 +53,17 @@ html, body {
 .botao1{
 	color: white;
 	background-color:#a844fc;
-	border-radius: 7px;
-	padding: 7px 20px;
+	border-radius: 20px;
+	padding: 5px;
 	text-decoration: none;
 	
 }
+.formatar-login-cadastro {
+	text-decoration: none;
+	font-weight: bold;
+}
 
+.cor-login-cadastro {
+	color: #a844fc;
+}
 
