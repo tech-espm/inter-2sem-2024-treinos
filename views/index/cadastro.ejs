@@ -20,7 +20,7 @@
 	  }
 	
 	.padding-div {
-		padding: 6px;
+		padding: 12px 0px 0px 0px;
 	}
 
 	.botao2 {
@@ -35,17 +35,29 @@
 		outline: none;
 		font-weight: bold;
 	}
+
+	.titulo-cadastro {
+		font-weight: bold;
+		padding: 15px 0px 3px 0px;
+		font-size: 30px;
+	}
+
+	.formatar-p {
+		font-size: 10px;
+		color: gray;
+		font-weight: bold;
+	}
 	
 </style>
 
 
 <div class="container-fluid">
 
-	<h1>
+	<h1 class="titulo-cadastro">
 		Cadastro
 	</h1>
-<!-- Mudar todos esses divs e padding dos campos para colunas de tamanho 4 (deixar pro pedro) -->
-	<div class="row">
+
+	<div class="row padding-div">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<input type="text" class="input-custom" placeholder="Usuário">
@@ -53,7 +65,7 @@
 		<div class="col-sm-4"></div>
 	</div>
 
-	<div class="row">
+	<div class="row padding-div">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<input type="text" class="input-custom" placeholder="Nome Completo">
@@ -61,7 +73,7 @@
 		<div class="col-sm-4"></div>
 	</div>
 
-	<div class="row">
+	<div class="row padding-div">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<input type="date" class="input-custom" placeholder="Data de Nascimento">
@@ -69,7 +81,7 @@
 		<div class="col-sm-4"></div>
 	</div>
 
-	<div class="row">
+	<div class="row padding-div">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<input type="email" class="input-custom" placeholder="Email">
@@ -77,7 +89,7 @@
 		<div class="col-sm-4"></div>
 	</div>
 
-	<div class="row">
+	<div class="row padding-div">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<input type="text" class="input-custom" placeholder="Senha">
@@ -85,10 +97,18 @@
 		<div class="col-sm-4"></div>
 	</div>
 
-	<div class="row">
+	<div class="row padding-div">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<a href="..." class="botao2 d-block">Fazer Cadastro</a>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<span class="formatar-p">Já possui cadastro? <a class="formatar-p" href="/login">Faça Login</a></span>
 		</div>
 		<div class="col-sm-4"></div>
 	</div>
