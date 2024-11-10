@@ -93,3 +93,13 @@ body {
 	color: black;
 }
 
+.custom-box {
+	border: 2px solid #a844fc; 
+	padding: 15px;
+	border-radius: 5px;
+}
+.custom-title {
+	color: #a844fc; 
+	font-weight: bold !important;
+	text-align: center;
+}
