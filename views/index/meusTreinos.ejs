@@ -1,14 +1,212 @@
+<style>
+	.input-custom {
+		width: 200px; /* ajuste conforme necessário */ 
+		padding: 5px;
+		border: 2px solid #ddd;
+		border-radius: 20px;
+		outline: none;
+		font-size: 12px;
+		color: #aaa;
+	  }
+
+	  /* Cor da borda ao focar */
+	  .input-custom:focus {
+		border-color: #ccc;
+	  }
+	
+	  /* Placeholder */
+	  .input-custom::placeholder {
+		color: #ddd;
+	  }
+	
+	.padding-div {
+		padding: 12px 0px 0px 0px;
+	}
+
+	.card-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+	}
+	
+	.card {
+		width: 300px;
+		border: 2px solid #a844fc;
+		border-radius: 10px;
+		padding: 10px;
+		font-family: Arial, sans-serif;
+		color: #333;
+	}
+	
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 14px;
+		color: #a844fc;
+		font-weight: bold;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #a844fc;
+	}
+	
+	.card-category {
+		font-size: 14px;
+		color: #a844fc;
+		font-weight: bold;
+	}
+	
+	.star-icon {
+		color: #a844fc;
+		font-size: 20px;
+	}
+	
+	.card-content {
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+	}
+	
+	.card-image {
+		width: 80px;
+		height: 80px;
+		border-radius: 5px;
+		margin-right: 10px;
+		object-fit: cover;
+	}
+	
+	.card-details {
+		flex: 1;
+	}
+	
+	.card-title {
+		font-size: 18px;
+		margin: 0;
+		font-weight: bold;
+	}
+	
+	.author-info {
+		display: flex;
+		align-items: center;
+		margin-top: 5px;
+	}
+	
+	.author-image {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		margin-right: 5px;
+	}
+	
+	.author-name {
+		font-size: 14px;
+		color: #333;
+	}
+
+</style>
+
 <div class="container-fluid">
 
 	<h1>
 		Meus Treinos
 	</h1>
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Criados</h2>
+			<input type="text" class="input-custom" placeholder="Procurar">
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<span class="card-category">Nome do tipo do treino</span>
+						<i class="bi bi-check-circle-fill icon"></i>
+					</div>
+					<div class="card-content">
+						<img src="treino1.jpg" alt="Imagem do treino" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Nome do treino</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<div class="mb">
-			<label class="form-label" for="nome">Procurar meus Treinos</label>
-			<input maxlength="50" id="nome" class="form-control" />
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<span class="card-category">Nome do tipo do treino</span>
+						<i class="bi bi-check-circle-fill icon"></i>
+					</div>
+					<div class="card-content">
+						<img src="treino1.jpg" alt="Imagem do treino" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Nome do treino</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
+		<div class="col-sm-6">
+			<h2>Favoritos</h2>
+			<input type="text" class="input-custom" placeholder="Procurar">
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<span class="card-category">Nome do tipo do treino</span>
+						<i class="star-icon">★</i>
+					</div>
+					<div class="card-content">
+						<img src="treino1.jpg" alt="Imagem do treino" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Nome do treino</h3>
+							<div class="author-info">
+								<img src="url-da-foto-do-autor.jpg" alt="Foto do autor" class="author-image">
+								<span class="author-name">nome do criador</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<span class="card-category">Nome do tipo do treino</span>
+						<i class="star-icon">★</i>
+					</div>
+					<div class="card-content">
+						<img src="url-da-imagem.jpg" alt="Imagem do treino" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Nome do treino</h3>
+							<div class="author-info">
+								<img src="url-da-foto-do-autor.jpg" alt="Foto do autor" class="author-image">
+								<span class="author-name">Nome do criador</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<span class="card-category">Nome do tipo de treino</span>
+						<i class="star-icon">★</i>
+					</div>
+					<div class="card-content">
+						<img src="url-da-imagem.jpg" alt="Imagem do treino" class="card-image">
+						<div class="card-details">
+							<h3 class="card-title">Nome do treino</h3>
+							<div class="author-info">
+								<img src="url-da-foto-do-autor.jpg" alt="Foto do autor" class="author-image">
+								<span class="author-name">Nome do criador</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
 
