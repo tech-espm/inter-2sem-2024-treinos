@@ -1,4 +1,3 @@
-
 <style>
 	.input-custom {
 		width: 250px; /* ajuste conforme necessário */ 
@@ -30,11 +29,12 @@
 		border: 2px solid;
 		padding: 5px;
 		border-radius: 20px;
-		width: 200px;
+		width: 250px;
 		font-size: 15px;
 		text-decoration: none;
 		outline: none;
 		font-weight: bold;
+		margin: 5px auto 0px auto;
 	}
 
 	.titulo-login {
@@ -51,6 +51,14 @@
     .centro{
         text-align: center;
     }
+
+	.direita{
+		text-align: right;
+	}
+
+	.margeme{
+		padding: 0px 80px 0px 0px;
+	}
 	
 </style>
 
@@ -77,20 +85,28 @@
         <div class="col-sm-4"></div>
     </div>
 
-    <div class="row padding-div">
+	<div class="row padding-div">
         <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <a href="..." class="botao2 d-block">Fazer Login</a>
+        <div class="col-sm-4 direita margeme">
+            <a class="formatar-p" href="/cadastro">Esqueceu a senha?</a>
         </div>
         <div class="col-sm-4"></div>
     </div>
 
-    <div class="row">
+    <div class="row padding-div">
         <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <span class="formatar-p">Esqueceu sua senha? <a class="formatar-p" href="/login">Clique aqui</a></span>
+        <div class="col-sm-4 centro">
+            <a href="/" class="botao2 d-block">Fazer Login</a>
         </div>
         <div class="col-sm-4"></div>
     </div>
+
+	<div class="row padding-div">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<span class="formatar-p">Não possui cadastro? <a class="formatar-p" href="/cadastro">Cadastre-se</a></span>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
 
 </div>
