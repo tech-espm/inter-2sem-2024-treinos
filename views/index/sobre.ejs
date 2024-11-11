@@ -1,22 +1,91 @@
-<div class="container my-5">
-	<h2 class="text-center text-primary font-weight-bold mb-4">Sobre nós</h2>
-	<div class="row">
-		<div class="col-md-8 mb-4">
-			<div class="p-4 border rounded shadow-sm fundo-branco cor-texto-sobre">
-				<p>Somos um grupo de sete alunos da ESPM, movidos pelo desejo de contribuir para a promoção da saúde e bem-estar por meio de práticas acessíveis e inclusivas de atividade física. Nosso projeto surgiu da necessidade de proporcionar um ambiente digital que facilite o acesso a diferentes tipos de treino, tanto para quem frequenta academias quanto para aqueles que preferem praticar exercícios em casa.</p>
-				<p>A escolha de criar este site é diretamente inspirada pelos Objetivos de Desenvolvimento Sustentável (ODS), em especial o de "Saúde e Bem-Estar", que busca garantir uma vida saudável e promover o bem-estar para todos. Acreditamos que, com a crescente demanda por saúde física e mental, oferecer uma plataforma onde usuários possam criar e compartilhar treinos personalizados é uma maneira prática e eficiente de incentivar hábitos saudáveis em nossa sociedade.</p>
-				<p>Nossa missão é possibilitar que qualquer pessoa, independentemente de seu nível de experiência, tenha acesso a treinos de qualidade, contribuindo assim para um estilo de vida mais ativo e equilibrado.</p>
-			</div>
-		</div>
-		<div class="col-md-4 d-flex align-items-center justify-content-center">
-			<div class="border rounded p-4 text-center fundo-branco shadow-sm" style="width: 100%; height: 100%;">
-				<p class="text-primary font-weight-bold">Foto Nossa</p>
-			</div>
-		</div>
+<style>
+	.padding{
+		padding: 25px;
+	}
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container {
+		display: flex;
+		max-width: 1000px;
+		gap: 20px;
+	}
+
+	h2 {
+		color: #8a2be2;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	.text-box {
+		flex: 2;
+		border: 2px solid #8a2be2;
+		border-radius: 10px;
+		padding: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.text-box p {
+		font-size: 16px;
+		line-height: 1.6;
+		color: #333;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.image-box {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.image-frame {
+		border: 2px solid #8a2be2;
+		border-radius: 10px;
+		width: 100%;
+		height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #333;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.espm-logo img {
+		width: 150px;
+	}
+</style>
+</head>
+<body>
+
+
+
+<div class="container padding">
+	<div class="text-box">
+		<h2>Sobre nós</h2>
+		<p>Somos um grupo de sete alunos da ESPM, movidos pelo desejo de contribuir para a promoção da saúde e bem-estar por meio de práticas acessíveis e inclusivas de atividade física. Nosso projeto surgiu da necessidade de proporcionar um ambiente digital que facilite o acesso a diferentes tipos de treino, tanto para quem frequenta academias quanto para aqueles que preferem praticar exercícios em casa.</p>
+		<p>A escolha de criar este site é diretamente inspirada pelos Objetivos de Desenvolvimento Sustentável (ODS), em especial o de "Saúde e Bem-Estar", que busca garantir uma vida saudável e promover o bem-estar para todos. Acreditamos que, com a crescente demanda por saúde física e mental, oferecer uma plataforma onde usuários possam criar e compartilhar treinos personalizados é uma maneira prática e eficiente de incentivar hábitos saudáveis em nossa sociedade.</p>
+		<p>Nossa missão é possibilitar que qualquer pessoa, independentemente de seu nível de experiência, tenha acesso a treinos de qualidade, contribuindo assim para um estilo de vida mais ativo e equilibrado.</p>
 	</div>
 
+	<div class="image-box">
+		<div class="image-frame">Foto Nossa</div>
+		<div class="espm-logo">
+			<img src="caminho/para/imagem_ESPM.png" alt="ESPM">
+		</div>
+	</div>
 </div>
 
 
 </body>
+
 </html>
