@@ -116,15 +116,9 @@ body {
 
 .texto-login-cadastro{
 	font-size: 14px;
-	line-height: 0.8;
+	line-height: 0.9;
 }
 
 .img-login-cadastro{
 	max-width: 40px;
-}
-
-.cadastro-link {
-    display: inline-block;
-	position: relative;
-    top: 4px;
 }
