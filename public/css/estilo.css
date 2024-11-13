@@ -37,18 +37,18 @@ html, body {
 }
 
 .navbar {
-	background-color: white !important;
 	border-bottom: 2px solid #a844fc !important;
 }
 
 .navbar-brand {
 	color: #a844fc;
+	margin: 0 30px 0 10px;
 }
 
 .nav-link {
 	color: #a844fc;
+	margin: 10px 0;
 }
-
 
 .botao1{
 	color: white;
@@ -56,8 +56,18 @@ html, body {
 	border-radius: 20px;
 	padding: 5px;
 	text-decoration: none;
-	
+	margin: 13px 0px;
 }
+
+.botao2{
+	border-radius: 20px;
+	padding: 5px;
+	margin: 13px 0px;
+	border-width: 2px;
+	border-color: #a844fc;
+	border-style: solid;
+}
+
 .formatar-login-cadastro {
 	text-decoration: none;
 	font-weight: bold;
@@ -102,4 +112,19 @@ body {
 	color: #a844fc; 
 	font-weight: bold !important;
 	text-align: center;
+}
+
+.texto-login-cadastro{
+	font-size: 14px;
+	line-height: 0.8;
+}
+
+.img-login-cadastro{
+	max-width: 40px;
+}
+
+.cadastro-link {
+    display: inline-block;
+	position: relative;
+    top: 4px;
 }
