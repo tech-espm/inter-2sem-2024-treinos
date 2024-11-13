@@ -1,49 +1,84 @@
 ﻿<style>
 
+	.seg-tit {
+		font-size: 1.8em;
+		color: #6a0dad;
+		margin-top: 20px;
+	}
 
-.custom-box {
-	border: 2px solid #a844fc; 
-	padding: 15px;
-	border-radius: 5px;
-}
-.custom-title {
-	color: #a844fc; 
-	font-weight: bold !important;
-	text-align: center;
-}
+	.Lets-fit {
+		font-size: 4em;
+		color: #6a0dad;
+		font-weight: bold;
+		animation: glow 1.5s ease-in-out infinite alternate;
+		margin-bottom: 30px;
+	}
+
+	.objective-box {
+		border: 2px solid #6a0dad;
+		border-radius: 15px;
+		padding: 20px;
+		background-color: #ffffff;
+		margin: 20px;
+		transition: transform 0.3s;
+		font-size: 1.2em;
+	}
+	.objective-box:hover {
+		transform: scale(1.05);
+	}
+
+
+	.tit-caixas {
+		font-size: 1.5em;
+		color: #6a0dad;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	.text-caixas {
+		font-size: 1em;
+		color: #333;
+		margin-bottom: 15px;
+	}
+
+
+	.img {
+		width: 50%;
+		height: auto;
+		border-radius: 10px;
+		margin-bottom: 10px;
+	}
 </style>
-<div class="container-fluid center">
+</head>
+<body>
 
-	<h2>
-		Bem vindo ao
-	</h2>
+<div class="container">
 
-	<h2>
-		Let's Fit
-	</h2>
- 
+	<h2 class="seg-tit">Encontre o treino ideal para você</h2>
+	<h1 class="Lets-fit">Let's Fit</h1>
 
-</div>
-
-<div class="container my-5">
 	<div class="row">
 		<div class="col-md-4">
-			<div class="custom-box">
-				<p class="custom-title">Nossos Objetivos</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar scelerisque sapien sit amet fermentum.</p>
+			<div class="objective-box">
+				<h3 class="tit-caixas">Nossos Objetivos</h3>
+				<p class="text-caixas">Promover bem-estar e motivar pessoas a desenvolverem seus próprios treinos e evoluírem no seu próprio ritmo.</p>
 			</div>
 		</div>
 		<div class="col-md-4">
-			<div class="custom-box">
-				<p class="custom-title">Por que usar Let's Fit?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar scelerisque sapien sit amet fermentum.</p>
+			<div class="objective-box">
+				<h3 class="tit-caixas">Por que usar Let's Fit?</h3>
+				<p class="text-caixas">Uma plataforma que permite explorar, personalizar e compartilhar treinos, conectando você a uma comunidade focada em saúde.</p>
 			</div>
 		</div>
 		<div class="col-md-4">
-			<div class="custom-box">
-				<p class="custom-title">Opções de Planos</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar scelerisque sapien sit amet fermentum.</p>
+			<div class="objective-box">
+				<h3 class="tit-caixas">Opções de Planos</h3>
+				<p class="text-caixas">Escolha entre opções gratuitas e premium para atender suas necessidades de treino e monitoramento de progresso.</p>
 			</div>
 		</div>
 	</div>
+	<img src="public\img\jonh.PNG" class="img">
 </div>
+
+
+</body>
+</html>
