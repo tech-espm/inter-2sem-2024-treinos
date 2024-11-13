@@ -1,6 +1,6 @@
 <style>
 	.input-custom {
-		width: 250px; /* ajuste conforme necessário */ 
+		width: 250px;
 		padding: 5px;
 		border: 2px solid #ddd;
 		border-radius: 20px;
@@ -8,13 +8,9 @@
 		font-size: 12px;
 		color: #aaa;
 	  }
-	
-	  /* Cor da borda ao focar */
 	  .input-custom:focus {
 		border-color: #ccc;
 	  }
-	
-	  /* Placeholder */
 	  .input-custom::placeholder {
 		color: #ddd;
 	  }
@@ -69,28 +65,39 @@
 
 <div class="container-fluid centro">
 
-    <h1 class="titulo-login">
-        Login
-    </h1>
+    
 
-	<div class="padding-div">
-		<input type="email" class="input-custom" placeholder="Email">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+
+			<h1 class="titulo-login">
+				Login
+			</h1>
+
+			<div class="padding-div">
+				<input type="email" class="input-custom" placeholder="Email">
+			</div>
+		
+			<div class="padding-div">
+				<input type="text" class="input-custom" placeholder="Senha">
+			</div>
+		
+			<div class="esqueceu direita">
+				<a class="formatar-p" href="/cadastro">Esqueceu a senha?</a>
+			</div>
+		
+			<div class="padding-div">
+				<a href="/" class="botao2 d-block">Fazer Login</a>
+			</div>
+		
+			<div class="padding-div">
+				<span class="formatar-p">Não possui cadastro? <a class="formatar-p" href="/cadastro">Cadastre-se</a></span>
+			</div>
+			
+		</div>
+		<div class="col-sm-4"></div>
 	</div>
 
-	<div class="padding-div">
-		<input type="text" class="input-custom" placeholder="Senha">
-	</div>
-
-	<div class="esqueceu direita">
-		<a class="formatar-p" href="/cadastro">Esqueceu a senha?</a>
-	</div>
-
-	<div class="padding-div">
-		<a href="/" class="botao2 d-block">Fazer Login</a>
-	</div>
-
-	<div class="padding-div">
-		<span class="formatar-p">Não possui cadastro? <a class="formatar-p" href="/cadastro">Cadastre-se</a></span>
-	</div>
 
 </div>
