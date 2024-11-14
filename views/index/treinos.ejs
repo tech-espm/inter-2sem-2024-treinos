@@ -1,4 +1,3 @@
-
 <style>
 	.category-tabs {
 		display: flex;
@@ -10,23 +9,23 @@
 		padding: 10px 20px;
 		border-radius: 25px;
 		border: 2px solid #a844fc;
-		color:  #a844fc;
+		color: #a844fc;
 		font-weight: bold;
 		cursor: pointer;
 		text-align: center;
 		transition: background-color 0.3s, color 0.3s;
 	}
 	.category-tab:hover {
-		background-color:  #a844fc;
+		background-color: #a844fc;
 		color: white;
 	}
-	
+
 	.Borda-Box-Img {
-		border: 2px solid  #a844fc;
+		border: 2px solid #a844fc;
 		border-radius: 15px;
 		overflow: hidden;
 		transition: transform 0.3s;
-		margin-bottom: 20px;
+		min-height: 100%;
 	}
 	.Borda-Box-Img:hover {
 		transform: scale(1.05);
@@ -37,86 +36,70 @@
 	}
 	.PDG-nmtr {
 		padding: 10px;
-		color:  #a844fc;
-	}	
+		color: #a844fc;
+	}
 	.PDG-detalhes {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		font-size: 14px;
-		color:  #a844fc;
+		color: #a844fc;
 	}
-
 </style>
 
+<div class="container-fluid">
+	<h1 class="titulo">Procurar Treinos</h1>
 
-
-
-</head>
-<body>
-	
-	<div class="container-fluid">
-		<h1 class="titulo">
-			Procurar Treinos
-		</h1 >
+	<div class="category-tabs">
+		<div class="category-tab">Academia</div>
+		<div class="category-tab">Calistenia</div>
+		<div class="category-tab">Alongamentos</div>
+		<div class="category-tab">Misto</div>
 	</div>
-	
 
-        
-
-        <div class="category-tabs">
-            <div class="category-tab">Academia</div>
-            <div class="category-tab">Calistenia</div>
-            <div class="category-tab">Alongamentos</div>
-            <div class="category-tab">Misto</div>
-        </div>
-
-  
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="Borda-Box-Img">
-                    <img src="public\img\pesochao.webp" alt="Imagem do treino">
-                    <div class="PDG-nmtr">
-                        <div class="PDG-detalhes">
-                            <span>2.3K ★</span>
-                            <span>↗</span>
-                        </div>
-                        <h5>Exercícios básicos de costas</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="Borda-Box-Img">
-                    <img src="public\img\Calistenia.jpg" alt="Imagem do treino">
-                    <div class="PDG-nmtr">
-                        <div class="PDG-detalhes">
-                            <span>2K ★</span>
-                            <span>↗</span>
-                        </div>
-                        <h5>Exercícios de calistenia avançada</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="Borda-Box-Img">
-                    <img src="public\img\alongamento.png" alt="Imagem do treino">
-                    <div class="PDG-nmtr">
-                        <div class="PDG-detalhes">
-                            <span>1.8K ★</span>
-                            <span>↗</span>
-                        </div>
-                        <h5>Alongamento Matinal</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-	  
 	<div class="row">
-		<div class="col-12 col-md-4">
+		<div class="col-md-4 pb-3">
 			<div class="Borda-Box-Img">
-				<img src="public\img\branco.png" alt="Imagem do treino">
+				<img src="public\img\pesochao.webp" alt="Imagem do treino" />
+				<div class="PDG-nmtr">
+					<div class="PDG-detalhes">
+						<span>2.3K ★</span>
+						<span>↗</span>
+					</div>
+					<h5>Exercícios básicos de costas</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 pb-3">
+			<div class="Borda-Box-Img">
+				<img src="public\img\Calistenia.jpg" alt="Imagem do treino" />
+				<div class="PDG-nmtr">
+					<div class="PDG-detalhes">
+						<span>2K ★</span>
+						<span>↗</span>
+					</div>
+					<h5>Exercícios de calistenia avançada</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 pb-3">
+			<div class="Borda-Box-Img">
+				<img src="public\img\alongamento.png" alt="Imagem do treino" />
+				<div class="PDG-nmtr">
+					<div class="PDG-detalhes">
+						<span>1.8K ★</span>
+						<span>↗</span>
+					</div>
+					<h5>Alongamento Matinal</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 pb-3">
+			<div class="Borda-Box-Img">
+				<img src="public\img\branco.png" alt="Imagem do treino" />
 				<div class="PDG-nmtr">
 					<div class="PDG-detalhes">
 						<span>1.4k ★</span>
@@ -126,21 +109,21 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-12 col-md-4">
+		<div class="col-md-4 pb-3">
 			<div class="Borda-Box-Img">
-				<img src="public\img\pe.png" alt="Imagem do treino">
+				<img src="public\img\pe.png" alt="Imagem do treino" />
 				<div class="PDG-nmtr">
 					<div class="PDG-detalhes">
 						<span>1.1K ★</span>
 						<span>↗</span>
 					</div>
-					<h5>Exercícios avançados para alongamento </h5>
+					<h5>Exercícios avançados para alongamento</h5>
 				</div>
 			</div>
 		</div>
-		<div class="col-12 col-md-4">
+		<div class="col-md-4 pb-3">
 			<div class="Borda-Box-Img">
-				<img src="public\img\peso.png" alt="Imagem do treino">
+				<img src="public\img\peso.png" alt="Imagem do treino" />
 				<div class="PDG-nmtr">
 					<div class="PDG-detalhes">
 						<span>2.5K ★</span>
@@ -152,6 +135,3 @@
 		</div>
 	</div>
 </div>
-
-</body>
-</html>

@@ -2,7 +2,8 @@ img {
 	max-width: 100%;
 }
 
-html, body {
+html,
+body {
 	/* Para fazer o rodapé ficar sempre na parte inferior da página ;) */
 	min-height: 100vh;
 }
@@ -28,10 +29,11 @@ html, body {
 .rodape {
 	text-align: center;
 	padding: 2rem;
-	border-top: 2px solid #a844fc
+	border-top: 2px solid #a844fc;
 }
 
-.link-rodape, .link-rodape:hover {
+.link-rodape,
+.link-rodape:hover {
 	color: #969696;
 	text-decoration: none;
 }
@@ -50,22 +52,34 @@ html, body {
 	margin: 10px 0;
 }
 
-.botao1{
+.botao1 {
 	color: white;
-	background-color:#a844fc;
+	background-color: #a844fc;
 	border-radius: 20px;
-	padding: 5px;
+	padding: 5px 10px;
 	text-decoration: none;
 	margin: 13px 0px;
 }
 
-.botao2{
+.botao2 {
 	border-radius: 20px;
-	padding: 5px;
+	padding: 5px 10px;
 	margin: 13px 0px;
 	border-width: 2px;
 	border-color: #a844fc;
 	border-style: solid;
+}
+
+.botao1:hover {
+	color: #fff;
+}
+
+.botao2:hover, .navbar-brand:hover {
+	color: #a844fc;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 5px 10px;
 }
 
 .formatar-login-cadastro {
@@ -73,30 +87,30 @@ html, body {
 	font-weight: bold;
 }
 
-.cor-login-cadastro {
+.cor-login-cadastro,
+.cor-login-cadastro:hover {
 	color: #a844fc;
 }
 
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
 }
 
 .text-primary {
-    color: #a844fc !important;
+	color: #a844fc !important;
 }
 
 .border {
-    border-color:  #a844fc ;
+	border-color: #a844fc;
 }
 
 .fundo-branco {
-    background-color: #ffffff ;
+	background-color: #ffffff;
 }
 
 .font-weight-bold {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .cor-texto-sobre {
@@ -104,42 +118,42 @@ body {
 }
 
 .custom-box {
-	border: 2px solid #a844fc; 
+	border: 2px solid #a844fc;
 	padding: 15px;
 	border-radius: 5px;
 }
 .custom-title {
-	color: #a844fc; 
+	color: #a844fc;
 	font-weight: bold !important;
 	text-align: center;
 }
 
-.texto-login-cadastro{
+.texto-login-cadastro {
 	font-size: 14px;
 	line-height: 0.9;
 }
 
-.img-login-cadastro{
+.img-login-cadastro {
 	max-width: 40px;
 }
 
 .input-custom {
 	width: 100%;
 	max-width: 100%;
-	padding: 5px;
+	padding: 5px 10px;
 	border: 2px solid #ddd;
 	border-radius: 20px;
 	outline: none;
 	font-size: 12px;
-	color: #aaa;
+	color: #555;
 }
 
 .input-custom:focus {
-border-color: #ccc;
+	border-color: #ccc;
 }
 
 .input-custom::placeholder {
-color: #ddd;
+	color: #999;
 }
 
 .padding-div {
@@ -148,9 +162,9 @@ color: #ddd;
 
 .botao-cadastro-login {
 	color: white;
-	background-color:#a844fc;
+	background-color: #a844fc;
 	border: 2px solid;
-	padding: 5px;
+	padding: 5px 10px;
 	border-radius: 20px;
 	max-width: 100%;
 	font-size: 15px;
@@ -172,6 +186,6 @@ color: #ddd;
 	font-weight: bold;
 }
 
-.direita{
+.direita {
 	text-align: right;
 }
