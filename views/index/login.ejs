@@ -1,6 +1,7 @@
 <style>
 	.input-custom {
-		width: 250px;
+		width: 100%;
+		max-width: 100%;
 		padding: 5px;
 		border: 2px solid #ddd;
 		border-radius: 20px;
@@ -19,13 +20,13 @@
 		padding: 12px 0px 0px 0px;
 	}
 
-	.botao2 {
+	.botao-login {
 		color: white;
 		background-color:#a844fc;
 		border: 2px solid;
 		padding: 5px;
 		border-radius: 20px;
-		width: 250px;
+		max-width: 100%;
 		font-size: 15px;
 		text-decoration: none;
 		outline: none;
@@ -58,15 +59,12 @@
 	
 	.esqueceu{
 		margin: 0 auto;
-		max-width: 250px;
+		max-width: 100%;
 	}
 </style>
 
 
 <div class="container-fluid centro">
-
-    
-
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
@@ -88,16 +86,14 @@
 			</div>
 		
 			<div class="padding-div">
-				<a href="/" class="botao2 d-block">Fazer Login</a>
+				<a href="/" class="botao-login d-block">Fazer Login</a>
 			</div>
 		
-			<div class="padding-div">
+			<div>
 				<span class="formatar-p">Não possui cadastro? <a class="formatar-p" href="/cadastro">Cadastre-se</a></span>
 			</div>
 			
 		</div>
 		<div class="col-sm-4"></div>
 	</div>
-
-
 </div>
