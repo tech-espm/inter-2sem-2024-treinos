@@ -14,11 +14,34 @@ class IndexRoute {
 	}
 
 	public async treinos(req: app.Request, res: app.Response) {
+		let treinos;
+
+		await app.sql.connect(async (sql) => {
+			treinos = await sql.query("select id, nome, idtipo, imagem, descricao_breve, descricao_completa from treino");
+		});
+
 		let opcoes = {
-			titulo: "Treinos"
+			titulo: "Treinos",
+			treinos: treinos
 		};
 
 		res.render("index/treinos", opcoes);
+	}
+
+	@app.http.post()
+	public async criar(req: app.Request, res: app.Response) {
+		let treino = req.body;
+
+		if (!treino.nome) {
+			res.status(400).json("Nome inválido");
+			return;
+		}
+
+		await app.sql.connect(async (sql) => {
+			await sql.query("insert into treino (nome, idtipo, imagem, descricao_breve, descricao_completa) values (?, ?, ?, ?, ?)", [treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa]);
+		});
+
+		res.json(true);
 	}
 
 	public async criarTreino(req: app.Request, res: app.Response) {
