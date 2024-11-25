@@ -4,14 +4,18 @@
     <a href="https://www.espm.br/cursos-de-graduacao/sistemas-de-informacao/"><img src="https://raw.githubusercontent.com/tech-espm/misc-template/main/logo.png" alt="Sistemas de Informação ESPM" style="width: 375px;"/></a>
 </p>
 
-# [Nome do Projeto] (por exemplo, Sistema de Gerenciamento da ESPM Júnior)
+# Let's Fit
 
 ### 2024-02
 
 ## Integrantes
-- [Nome do integrante 1 e link do portifólio](https://github.com/tech-espm/)
-- [Nome do integrante 2 e link do portifólio](https://github.com/tech-espm/)
-- [Nome do integrante 3 e link do portifólio](https://github.com/tech-espm/)
+- [José Longo Neto](https://github.com/Jose-Longo-A)
+- [Pedro Maricate](https://github.com/PedroMaricate)
+- [Martim Ponzio](https://github.com/martimponzio)
+- [Eduardo Gul](https://github.com/eduardogd09)
+- [Enzo Malagoli](https://github.com/EnzoMalagoli)
+- [Pablo Dimitrof](https://github.com/PabloDimitrof)
+- [Artur Nápoles](https://github.com/NAPartur21)
 
 ## Descrição do Projeto
 
