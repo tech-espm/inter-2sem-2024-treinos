@@ -51,94 +51,29 @@
 	<h1 class="titulo">Procurar Treinos</h1>
 
 	<div class="category-tabs">
-		<div class="category-tab">Academia</div>
-		<div class="category-tab">Calistenia</div>
-		<div class="category-tab">Alongamentos</div>
-		<div class="category-tab">Misto</div>
+		<button type="button" class="category-tab" onclick="listarTudo()">Todos</button>
+		<button type="button" class="category-tab" onclick="listarCal()">Calistenia</button>
+		<button type="button" class="category-tab" onclick="listarAlo()">Alongamentos</button>
+		<button type="button" class="category-tab" onclick="listarMus()">Musculação</button>
 	</div>
 
 	<div class="row">
 		<% for (let i = 0; i < treinos.length; i++) { %>
-			<div>
-				<%= treinos[i].nome %>
-				<%= treinos[i].tipo %>
-				<img src="/public/img/treino<%= treinos[i].imagem %>.jpg" alt="Imagem do treino" />
+			<div class="col-md-4 pb-3">
+				<div class="Borda-Box-Img">
+					<img class="" src="/public/img/treino<%= treinos[i].imagem %>.jpg" alt="Imagem do treino" />
+					<div class="PDG-nmtr">
+						<div class="PDG-detalhes">
+							<span><%= Math.floor(Math.random() * (99 - 10) + 10)/10 %>K ★</span>
+							<span><%= treinos[i].tipo %></span>
+						</div>
+						<h5><%= treinos[i].nome %></h5>
+					</div>
+				</div>
 			</div>
 		<% } %>
-		<div class="col-md-4 pb-3">
-			<div class="Borda-Box-Img">
-				<img src="public\img\pesochao.webp" alt="Imagem do treino" />
-				<div class="PDG-nmtr">
-					<div class="PDG-detalhes">
-						<span>2.3K ★</span>
-						<span>↗</span>
-					</div>
-					<h5>Exercícios básicos de costas</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-3">
-			<div class="Borda-Box-Img">
-				<img src="public\img\Calistenia.jpg" alt="Imagem do treino" />
-				<div class="PDG-nmtr">
-					<div class="PDG-detalhes">
-						<span>2K ★</span>
-						<span>↗</span>
-					</div>
-					<h5>Exercícios de calistenia avançada</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-3">
-			<div class="Borda-Box-Img">
-				<img src="public\img\alongamento.png" alt="Imagem do treino" />
-				<div class="PDG-nmtr">
-					<div class="PDG-detalhes">
-						<span>1.8K ★</span>
-						<span>↗</span>
-					</div>
-					<h5>Alongamento Matinal</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-4 pb-3">
-			<div class="Borda-Box-Img">
-				<img src="public\img\branco.png" alt="Imagem do treino" />
-				<div class="PDG-nmtr">
-					<div class="PDG-detalhes">
-						<span>1.4k ★</span>
-						<span>↗</span>
-					</div>
-					<h5>Exercícios de calistenia</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-3">
-			<div class="Borda-Box-Img">
-				<img src="public\img\pe.png" alt="Imagem do treino" />
-				<div class="PDG-nmtr">
-					<div class="PDG-detalhes">
-						<span>1.1K ★</span>
-						<span>↗</span>
-					</div>
-					<h5>Exercícios avançados para alongamento</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-3">
-			<div class="Borda-Box-Img">
-				<img src="public\img\peso.png" alt="Imagem do treino" />
-				<div class="PDG-nmtr">
-					<div class="PDG-detalhes">
-						<span>2.5K ★</span>
-						<span>↗</span>
-					</div>
-					<h5>Treino completo de Costas e Bíceps</h5>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
+
+<script>
+</script>
