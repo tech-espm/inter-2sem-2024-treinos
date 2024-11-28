@@ -58,6 +58,12 @@
 	</div>
 
 	<div class="row">
+		<% for (let i = 0; i < treinos.length; i++) { %>
+			<div>
+				<%= treinos[i].nome %>
+				<img src="/public/img/treino<%= treinos[i].imagem %>.jpg" alt="Imagem do treino" />
+			</div>
+		<% } %>
 		<div class="col-md-4 pb-3">
 			<div class="Borda-Box-Img">
 				<img src="public\img\pesochao.webp" alt="Imagem do treino" />
