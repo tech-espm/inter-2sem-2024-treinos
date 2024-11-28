@@ -17,7 +17,7 @@ class IndexRoute {
 		let treinos;
 
 		await app.sql.connect(async (sql) => {
-			treinos = await sql.query("select id, nome, idtipo, imagem, descricao_breve, descricao_completa from treino");
+			treinos = await sql.query("select treino.id, treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa, tipo.nome tipo from treino inner join tipo on tipo.id = treino.idtipo");
 		});
 
 		let opcoes = {
