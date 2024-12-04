@@ -17,7 +17,7 @@ class IndexRoute {
 		let treinos;
 
 		await app.sql.connect(async (sql) => {
-			treinos = await sql.query("select treino.id, treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa, tipo.nome tipo from treino inner join tipo on tipo.id = treino.idtipo");
+			treinos = await sql.query("select treino.id, treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa, treino.favoritos, tipo.nome tipo from treino inner join tipo on tipo.id = treino.idtipo");
 		});
 
 		let opcoes = {
@@ -38,7 +38,7 @@ class IndexRoute {
 		}
 
 		await app.sql.connect(async (sql) => {
-			await sql.query("insert into treino (nome, idtipo, imagem, descricao_breve, descricao_completa) values (?, ?, ?, ?, ?)", [treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa]);
+			await sql.query("insert into treino (nome, idtipo, imagem, descricao_breve, descricao_completa, favoritos) values (?, ?, ?, ?, ?, ?)", [treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa, Math.trunc(Math.random() * 9000) + 1000]);
 		});
 
 		res.json(true);

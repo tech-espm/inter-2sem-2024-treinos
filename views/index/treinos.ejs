@@ -65,7 +65,7 @@
 					<img class="" src="/public/img/treino<%= treinos[i].imagem %>.jpg" alt="Imagem do treino" />
 					<div class="PDG-nmtr">
 						<div class="PDG-detalhes">
-							<span><%= Math.floor(Math.random() * (99 - 10) + 10)/10 %>K ★</span>
+							<span><%= (treinos[i].favoritos / 1000).toFixed(1) %>K ★</span>
 							<span><%= treinos[i].tipo %></span>
 						</div>
 						<h5><%= treinos[i].nome %></h5>
