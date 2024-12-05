@@ -28,6 +28,38 @@ class IndexRoute {
 		res.render("index/treinos", opcoes);
 	}
 
+	public async verTreino(req: app.Request, res: app.Response) {
+		let id = parseInt(req.query["id"] as string);
+		let treinos;
+
+		await app.sql.connect(async (sql) => {
+			treinos = await sql.query("select treino.id, treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa, treino.favoritos, tipo.nome tipo from treino inner join tipo on tipo.id = treino.idtipo where treino.id = ?", [id]);
+		});
+
+		let opcoes = {
+			titulo: "Treino",
+			treino: treinos[0]
+		};
+
+		res.render("index/verTreino", opcoes);
+	}
+
+	public async editarTreino(req: app.Request, res: app.Response) {
+		let id = parseInt(req.query["id"] as string);
+		let treinos;
+
+		await app.sql.connect(async (sql) => {
+			treinos = await sql.query("select treino.id, treino.nome, treino.idtipo, treino.imagem, treino.descricao_breve, treino.descricao_completa, treino.favoritos, tipo.nome tipo from treino inner join tipo on tipo.id = treino.idtipo where treino.id = ?", [id]);
+		});
+
+		let opcoes = {
+			titulo: "Editar Treino",
+			treino: treinos[0]
+		};
+
+		res.render("index/editarTreino", opcoes);
+	}
+
 	@app.http.post()
 	public async criar(req: app.Request, res: app.Response) {
 		let treino = req.body;

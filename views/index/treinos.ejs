@@ -22,6 +22,8 @@
 	}
 
 	.Borda-Box-Img {
+		display: block;
+		text-decoration: none;
 		border: 2px solid #a844fc;
 		border-radius: 15px;
 		overflow: hidden;
@@ -61,7 +63,7 @@
 	<div class="row">
 		<% for (let i = 0; i < treinos.length; i++) { %>
 			<div class="col-md-4 pb-3">
-				<div class="Borda-Box-Img">
+				<a href="/verTreino?id=<%= treinos[i].id %>" class="Borda-Box-Img">
 					<img class="" src="/public/img/treino<%= treinos[i].imagem %>.jpg" alt="Imagem do treino" />
 					<div class="PDG-nmtr">
 						<div class="PDG-detalhes">
@@ -69,8 +71,9 @@
 							<span><%= treinos[i].tipo %></span>
 						</div>
 						<h5><%= treinos[i].nome %></h5>
+						<p><%= treinos[i].descricao_breve %></p>
 					</div>
-				</div>
+				</a>
 			</div>
 		<% } %>
 	</div>
