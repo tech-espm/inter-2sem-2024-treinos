@@ -23,6 +23,7 @@ CREATE TABLE treino (
   imagem int NOT NULL,
   descricao_breve varchar(150) NOT NULL,
   descricao_completa mediumtext NOT NULL,
+  favoritos int NOT NULL,
   exclusao datetime NULL,
   PRIMARY KEY (id),
   UNIQUE KEY nome_UN (nome),

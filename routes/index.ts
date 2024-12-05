@@ -108,6 +108,14 @@ class IndexRoute {
 		res.render("index/login", opcoes);
 	}
 	
+	public async vejaMais(req: app.Request, res: app.Response) {
+		let opcoes = {
+			titulo: "Veja Mais"
+		};
+
+		res.render("index/vejaMais", opcoes);
+	}
+	
 }
 
 export = IndexRoute;
