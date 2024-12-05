@@ -7,22 +7,27 @@
 
 	.Lets-fit {
 		font-size: 4em;
-		color: #a844fc;
+		color: #ffffff;
 		font-weight: bold;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 		animation: glow 1.5s ease-in-out infinite alternate;
+		text-align: center;
+	}
+	@keyframes glow {
+		from {
+			text-shadow: 0 0 5px #a844fc, 0 0 10px #a844fc, 0 0 15px #a844fc;
+		}
+		to {
+			text-shadow: 0 0 20px #d679ff, 0 0 30px #d679ff, 0 0 40px #d679ff;
+		}
 	}
 
 	.objective-box {
-		border: 2px solid #a844fc;
-		border-radius: 15px;
 		padding: 20px;
 		background-color: #ffffff;
 		transition: transform 0.3s;
 		font-size: 1.2em;
 		min-height: 100%;
-	}
-	.objective-box:hover {
-		transform: scale(1.05);
 	}
 
 	.tit-caixas {
@@ -46,7 +51,7 @@
 
 	
 	.imagem1 {
-		background-image: url('public/img/imgindexprincipal.jpg');
+		background-image: url('public/img/academia.roxa.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -56,6 +61,7 @@
 		justify-content: center;
 	}
 
+	
 </style>
 
 <div class="imagem1">
@@ -66,27 +72,21 @@
 
 	<h2 class="seg-tit">Encontre o treino ideal para você</h2>
 
-	<div class="row">
-		<div class="col-md-4 pb-3">
-			<div class="objective-box">
-				<h3 class="tit-caixas">Nossos Objetivos</h3>
-				<p class="text-caixas">Promover bem-estar e motivar pessoas a desenvolverem seus próprios treinos e evoluírem no seu próprio ritmo.</p>
-			</div>
-		</div>
-		<div class="col-md-4 pb-3">
-			<div class="objective-box">
-				<h3 class="tit-caixas">Por que usar Let's Fit?</h3>
-				<p class="text-caixas">Uma plataforma que permite explorar, personalizar e compartilhar treinos, conectando você a uma comunidade focada em saúde.</p>
-			</div>
-		</div>
-		<div class="col-md-4 pb-3">
-			<div class="objective-box">
-				<h3 class="tit-caixas">Opções de Planos</h3>
-				<p class="text-caixas">Escolha entre opções gratuitas e premium para atender suas necessidades de treino e monitoramento de progresso.</p>
-			</div>
-		</div>
+	<div class="objective-box">
+		<h3 class="tit-caixas">Nossos Objetivos</h3>
+		<p class="text-caixas">Promover bem-estar e motivar pessoas a desenvolverem seus próprios treinos e evoluírem no seu próprio ritmo.</p>
 	</div>
-	<img src="public\img\jonh.PNG" class="img">
+
+	<div class="objective-box">
+		<h3 class="tit-caixas">Por que usar Let's Fit?</h3>
+		<p class="text-caixas">Explore, personalize e compartilhe treinos, conectando-se a uma comunidade focada em saúde e bem-estar.</p>
+	</div>
+
+	<div class="objective-box">
+		<h3 class="tit-caixas">Opções de Planos</h3>
+		<p class="text-caixas">Escolha entre opções gratuitas e premium para atender suas necessidades de treino e monitoramento de progresso.</p>
+	</div>
+	
 	
 	<a class="nav-link botao1" href="/vejaMais">Veja mais</a>
 
