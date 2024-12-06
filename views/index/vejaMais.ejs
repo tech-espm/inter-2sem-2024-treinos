@@ -1,36 +1,78 @@
 <style>
     .pVejaMais {
         color: black;
+        margin: 5px;
     }
 
     .pVejaMaisBold {
         font-weight: bold;
+        margin-bottom: 40px;
     }
 
-    .margem {
-        margin-top: 55px;
-        margin-left: 20px;
-        margin-right: 20px;
+    .titulobloco{
+        font-size: 23px;
+        font-weight: bold;
     }
+
+    .margemdentrobloco {
+        margin: 8px;
+    }
+
+    .bloco{
+        border: 2px solid #a844fc;
+        border-radius: 20px;
+        background-color: white;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .blocointroducao{
+        border: 2px solid #a844fc;
+        border-radius: 20px;
+        background-color: white;
+        max-width: 800px;
+        text-align: center;
+        margin: 10px auto 40px auto;
+        font-size: 17px;
+    }
+
+    .formatar{
+        margin: 50px auto 0 auto;
+        max-width: 600px;
+    }
+
 </style>
 
-<p class="pVejaMais margem">Nosso projeto se iniciou com a ideia de incentivar atividades físicas e celebrar as 
-    diferenças entre práticas variadas de exercícios, e isso evoluiu para criar uma plataforma de treinos 
-    personalizados e acessíveis. Para isso, realizamos diversas pesquisas sobre o que nosso público-alvo procura 
-    e sente falta neste mercado. Os dados obtidos nos permitiram entender as necessidades e dificuldades das pessoas
-     em alcançarem seus objetivos e de alguma maneira terem uma vida mais saudável.</p>
+<h1 class="pVejaMaisBold">
+    Nossa Pesquisa
+</h1>
 
-<p class="pVejaMaisBold">Veja os resultados que alcançamos:</p>
+<div class="blocointroducao">
+    <p class="pVejaMais margemdentrobloco">
+        Nosso projeto se iniciou com a ideia de incentivar atividades físicas e celebrar as 
+        diferenças entre práticas variadas de exercícios, e isso evoluiu para criar uma plataforma de treinos 
+        personalizados e acessíveis. Para isso, realizamos diversas pesquisas sobre o que nosso público-alvo procura 
+        e sente falta neste mercado. Os dados obtidos nos permitiram entender as necessidades e dificuldades das pessoas
+         em alcançarem seus objetivos e de alguma maneira terem uma vida mais saudável.
+    </p>
+</div>
+
+
+<h2 class="pVejaMaisBold">Veja os resultados que alcançamos:</h2>
 
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-sm-6">
-            <p class="pVejaMais margem">Neste primeiro destaque, a pergunta teve o intuito de entender a distribuição de atividades físicas praticadas pelas pessoas. 
-                O resultado é uma grande maioria praticante de musculação e esportes no geral, seguidos de longe de aeróbicos. 
-                Provavelmente porque esportes são comumente praticados por pessoas de diversas idades, e musculação está em uma grande alta, 
-                e é mais acessível para quem está iniciando em atividades físicas.
-            </p>
+        <div class="col-sm-6 formatar">
+            <h3 class="titulobloco">Você pratica alguma atividade física atualmente?</h3>
+            <div class="bloco">
+                <p class="pVejaMais">Neste primeiro destaque, a pergunta teve o intuito de entender a distribuição de atividades físicas praticadas pelas pessoas. 
+                    O resultado é uma grande maioria praticante de musculação e esportes no geral, seguidos de longe de aeróbicos. 
+                    Provavelmente porque esportes são comumente praticados por pessoas de diversas idades, e musculação está em uma grande alta, 
+                    e é mais acessível para quem está iniciando em atividades físicas.
+                </p>
+            </div>
         </div>
         <div class="col-sm-6">
             <img src="/public/img/GRAFICO1.png"> <!-- Gráfico 1 -->
@@ -39,21 +81,27 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <p class="pVejaMais margem">No segundo destaque, a pergunta teve a intenção de descobrir o que faz as pessoas exercerem as atividades físicas, 
-                para sabermos quais são suas preferências, pois cada atividade tem sua finalidade final. 
-                Esses resultados estão relacionados com as atividades físicas praticadas pelas pessoas.
-            </p>
-        </div>
-        <div class="col-sm-6">
             <img src="/public/img/GRAFICO2.png" alt=""> <!-- Gráfico 2 -->
+        </div>
+        <div class="col-sm-6 formatar">
+            <h3 class="titulobloco">Qual é a sua motivação para realizar atividades físicas?</h3>
+            <div class="bloco">
+                <p class="pVejaMais">No segundo destaque, a pergunta teve a intenção de descobrir o que faz as pessoas exercerem as atividades físicas, 
+                    para sabermos quais são suas preferências, pois cada atividade tem sua finalidade final. 
+                    Esses resultados estão relacionados com as atividades físicas praticadas pelas pessoas.
+                </p>
+            </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
-            <p class="pVejaMais margem">Por fim, o terceiro destaque, e sua pergunta teve o intuito de descobrir quais problemas mais afetam negativamente 
-                a prática de exercícios físicos na vida das pessoas, e trouxemos o resultado da variável que mais atrapalha, o tempo.
-            </p>
+        <div class="col-sm-6 formatar">
+            <h3 class="titulobloco">O quanto estes problemas te impedem de alcançar seu físico ideal?</h3>
+            <div class="bloco">
+                <p class="pVejaMais">Por fim, o terceiro destaque, e sua pergunta teve o intuito de descobrir quais problemas mais afetam negativamente 
+                    a prática de exercícios físicos na vida das pessoas, e trouxemos o resultado da variável que mais atrapalha, o tempo.
+                </p>
+            </div>
         </div>
         <div class="col-sm-6">
             <img src="/public/img/GRAFICO3.png" alt=""> <!-- Gráfico 3 -->
