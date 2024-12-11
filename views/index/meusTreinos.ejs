@@ -92,35 +92,24 @@
 		<div class="col-sm-6">
 			<h2 class="titulo">Criados</h2>
 			<input type="text" class="input-custom" placeholder="Procurar">
-			<div class="card-container">
-				<div class="card">
-					<div class="card-header">
-						<span class="card-category">Nome do tipo do treino</span>
-						<i class="bi bi-check-circle-fill icon"></i>
-					</div>
-					<div class="card-content">
-						<img src="public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
-						<div class="card-details">
-							<h3 class="card-title">Nome do treino</h3>
+			<% for (let i = 0; i < treinos.length; i++) { %>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-header">
+							<span class="card-category"><%= treinos[i].tipo %></span>
+							<i class="bi bi-check-circle-fill icon"></i>
+						</div>
+						<div class="card-content">
+							<img src="/public/img/treino<%= treinos[i].imagem %>.jpg" alt="Imagem do treino" class="card-image">
+							<div class="card-details">
+								<h3 class="card-title mb-3"><%= treinos[i].nome %></h3>
+								<p class="my-3"><a class="botao1" href="/verTreino?id=<%= treinos[i].id %>">Ver Treino</a></p>
+								<p class="my-0"><a class="botao1" href="/editarTreino?id=<%= treinos[i].id %>">Editar Treino</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="card-container">
-				<div class="card">
-					<div class="card-header">
-						<span class="card-category">Nome do tipo do treino</span>
-						<i class="bi bi-check-circle-fill icon"></i>
-					</div>
-					<div class="card-content">
-						<img src="public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
-						<div class="card-details">
-							<h3 class="card-title">Nome do treino</h3>
-						</div>
-					</div>
-				</div>
-			</div>
+			<% } %>
 
 		</div>
 		<div class="col-sm-6">
@@ -133,11 +122,11 @@
 						<i class="star-icon">★</i>
 					</div>
 					<div class="card-content">
-						<img src="public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
+						<img src="/public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
 						<div class="card-details">
 							<h3 class="card-title">Nome do treino</h3>
 							<div class="author-info">
-								<img src="public/img/treino1.jpg" alt="Foto do autor" class="author-image">
+								<img src="/public/img/treino1.jpg" alt="Foto do autor" class="author-image">
 								<span class="author-name">nome do criador</span>
 							</div>
 						</div>
@@ -152,11 +141,11 @@
 						<i class="star-icon">★</i>
 					</div>
 					<div class="card-content">
-						<img src="public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
+						<img src="/public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
 						<div class="card-details">
 							<h3 class="card-title">Nome do treino</h3>
 							<div class="author-info">
-								<img src="public/img/treino1.jpg" alt="Foto do autor" class="author-image">
+								<img src="/public/img/treino1.jpg" alt="Foto do autor" class="author-image">
 								<span class="author-name">Nome do criador</span>
 							</div>
 						</div>
@@ -171,11 +160,11 @@
 						<i class="star-icon">★</i>
 					</div>
 					<div class="card-content">
-						<img src="public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
+						<img src="/public/img/treino1.jpg" alt="Imagem do treino" class="card-image">
 						<div class="card-details">
 							<h3 class="card-title">Nome do treino</h3>
 							<div class="author-info">
-								<img src="public/img/treino1.jpg" alt="Foto do autor" class="author-image">
+								<img src="/public/img/treino1.jpg" alt="Foto do autor" class="author-image">
 								<span class="author-name">Nome do criador</span>
 							</div>
 						</div>

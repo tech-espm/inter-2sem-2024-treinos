@@ -1,7 +1,13 @@
-<div class="container">
-	<div>
+<div class="container-fluid">
+	<h1 class="mt-5 mb-3">
 		<%= treino.nome %>
+	</h1>
+
+	<div class="text-center my-3">
+		<img width="300" class="" src="/public/img/treino<%= treino.imagem %>.jpg" alt="Imagem do treino" />
 	</div>
+
+	<hr class="mt-3 mb-5" />
 
 	<div>
 		<%- treino.descricao_completa %>

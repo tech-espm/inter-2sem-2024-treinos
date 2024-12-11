@@ -1,0 +1,103 @@
+<div class="container-fluid">
+
+	<h1 class="titulo">
+		Editar Treino
+	</h1>
+
+	<input id="inputId" type="hidden" value="<%= treino.id %>" />
+
+	<div class="row">
+		<div class="col-md-3">
+			<div class="mb-3">
+				<label class="form-label" for="nome">Nome do Treino</label>
+				<input maxlength="50" id="nome" class="input-custom" value="<%= treino.nome %>" />
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="mb-3">
+				<label class="form-label" for="descricao_breve">Descrição Breve</label>
+				<input maxlength="150" id="descricao_breve" class="input-custom" value="<%= treino.descricao_breve %>" />
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="mb-3">
+				<label class="form-label" for="idtipo">Tipo</label>
+				<select id="idtipo" class="input-custom">
+					<option value="1" <%- (treino.idtipo == 1 ? "selected" : "") %>>Calistenia</option>
+					<option value="2" <%- (treino.idtipo == 2 ? "selected" : "") %>>Musculação</option>
+					<option value="3" <%- (treino.idtipo == 3 ? "selected" : "") %>>Alongamento</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="mb-3">
+				<label class="form-label" for="imagem">Imagem</label>
+				<select id="imagem" class="input-custom">
+					<option value="1" <%- (treino.imagem == 1 ? "selected" : "") %>>Abdominal</option>
+					<option value="2" <%- (treino.imagem == 2 ? "selected" : "") %>>Braço</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label" for="descricao_completa">Descrição Completa</label>
+		<div id="descricao_completa"><%- treino.descricao_completa %></div>
+	</div>
+
+	<div class="mb-3">
+		<button type="button" class="botao-cadastro-login d-block" onclick="criarTreino()">Editar Treino</button>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/public/js/ckeditor/ckeditor.js"></script>
+
+<script>
+
+	CKEDITOR.replace("descricao_completa");
+
+	async function criarTreino() {
+		let inputId = document.getElementById("inputId");
+		let inputNome = document.getElementById("nome");
+		let inputDescricao_breve = document.getElementById("descricao_breve");
+		let inputIdtipo = document.getElementById("idtipo");
+		let inputImagem = document.getElementById("imagem");
+
+		let id = inputId.value;
+		let nome = inputNome.value;
+		let descricao_breve = inputDescricao_breve.value;
+		let idtipo = inputIdtipo.value;
+		let imagem = inputImagem.value;
+		let descricao_completa = CKEDITOR.instances.descricao_completa.getData();
+
+		let treino = {
+			id: id,
+			nome: nome,
+			descricao_breve: descricao_breve,
+			idtipo: idtipo,
+			imagem: imagem,
+			descricao_completa: descricao_completa
+		};
+
+		try {
+			let response = await fetch("/editar", {
+				method: "POST",
+				body: JSON.stringify(treino),
+				headers: {
+					"content-type": "application/json"
+				}
+			});
+
+			if (!response.ok) {
+				Swal.fire("Erro", "Ocorreu um erro ao editar o treino", "error");
+				return;
+			}
+
+			Swal.fire("Sucesso!", "Treino editado com sucesso!", "success");
+		} catch (ex) {
+			Swal.fire("Erro", "Ocorreu um erro de rede ao editar o treino: " + ex.message, "error");
+		}
+	}
+
+</script>
