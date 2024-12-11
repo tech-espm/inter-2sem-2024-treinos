@@ -6,12 +6,13 @@
 	}
 
 	.Lets-fit {
-		font-size: 4em;
+		font-size: 80px;
 		color: #ffffff;
 		font-weight: bold;
 		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 		animation: glow 1.5s ease-in-out infinite alternate;
 		text-align: center;
+		margin-top: 150px;
 	}
 	@keyframes glow {
 		from {
@@ -24,7 +25,6 @@
 
 	.objective-box {
 		padding: 20px;
-		background-color: #ffffff;
 		transition: transform 0.3s;
 		font-size: 1.2em;
 		min-height: 100%;
@@ -43,12 +43,9 @@
 	}
 
 	.img {
-		width: 50%;
-		height: auto;
-		border-radius: 10px;
-		margin-bottom: 10px;
+		max-width: 100%;
+		max-height: 500px;
 	}
-
 	
 	.imagem1 {
 		background-image: url('public/img/academia.roxa.jpg');
@@ -58,7 +55,6 @@
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 	}
 
 	.botaopesquisa{
@@ -67,7 +63,7 @@
 	border-radius: 20px;
 	padding: 5px 10px;
 	text-decoration: none;
-	margin: 13px auto;
+	margin: 13px auto 0px auto;
 	max-width: 230px;
 	font-size: 20px;
 	}
@@ -76,6 +72,41 @@
 		color: #fff;
 	}
 
+	.container-fluid{
+		background-color: #ffffff;
+	}
+
+	.col-md-5{
+		padding: 0;
+	}
+
+	.col-md-7{
+		padding: 0;
+	}
+
+	.containerbranco1{
+		max-height: 500px;
+		padding: 0 50px;
+	}
+
+	.containerroxo{
+		background-color: #a844fc;
+		max-height: 500px;
+		padding: 0 50px;
+	}
+
+	.containerbranco2{
+		max-height: 500px;
+		padding: 0 50px;
+	}
+
+	.branco{
+		color: white;
+	}
+
+	.paddingbotao{
+		padding-bottom: 50px;
+	}
 	
 </style>
 
@@ -84,23 +115,43 @@
 </div>
 
 <div class="container-fluid">
-
-	<div class="objective-box">
-		<h3 class="tit-caixas">Nossos Objetivos</h3>
-		<p class="text-caixas">Promover bem-estar e motivar pessoas a desenvolverem seus próprios treinos e evoluírem no seu próprio ritmo.</p>
+	<div class="row containerbranco1">
+		<div class="col-md-7">
+			<img src="public/img/indexcalistenia.jpg" class="img">
+		</div>
+		<div class="col-md-5">
+			<div class="objective-box">
+				<h3 class="tit-caixas">Nossos Objetivos</h3>
+				<p class="text-caixas">Promover bem-estar e motivar pessoas a desenvolverem seus próprios treinos e evoluírem no seu próprio ritmo.</p>
+			</div>
+		</div>
 	</div>
 
-	<div class="objective-box">
-		<h3 class="tit-caixas">Por que usar Let's Fit?</h3>
-		<p class="text-caixas">Explore, personalize e compartilhe treinos, conectando-se a uma comunidade focada em saúde e bem-estar.</p>
+	<div class="row containerroxo">
+		<div class="col-md-5">
+			<div class="objective-box">
+				<h3 class="tit-caixas branco">Por que usar Let's Fit?</h3>
+				<p class="text-caixas branco">Explore, personalize e compartilhe treinos, conectando-se a uma comunidade focada em saúde e bem-estar.</p>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<img src="public/img/indexalongamento.jpg" class="img">
+		</div>
 	</div>
 
-	<div class="objective-box">
-		<h3 class="tit-caixas">Opções de Planos</h3>
-		<p class="text-caixas">Escolha entre opções gratuitas e premium para atender suas necessidades de treino e monitoramento de progresso.</p>
+	<div class="row containerbranco2">
+		<div class="col-md-7">
+			<img src="public/img/indexmusculacao.jpg" class="img">
+		</div>
+		<div class="col-md-5">
+			<div class="objective-box">
+				<h3 class="tit-caixas">Opções de Planos</h3>
+				<p class="text-caixas">Escolha entre opções gratuitas e premium para atender suas necessidades de treino e monitoramento de progresso.</p>
+			</div>
+		</div>
 	</div>
 	
-	
-	<a class="nav-link botaopesquisa" href="/vejaMais">Veja a nossa pesquisa</a>
-
+	<div class="paddingbotao">
+		<a class="nav-link botaopesquisa" href="/vejaMais">Veja a nossa pesquisa</a>
+	</div>
 </div>

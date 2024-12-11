@@ -39,11 +39,13 @@ body {
 
 .navbar {
 	border-bottom: 2px solid #a844fc !important;
+	padding: 0;
 }
 
 .navbar-brand {
 	color: #a844fc;
 	margin: 0 70px 0 10px;
+	font-weight: bold;
 }
 
 .nav-link {
@@ -58,16 +60,13 @@ body {
 	padding: 5px 10px;
 	text-decoration: none;
 	margin: 13px 0px;
+	font-weight: bold;
 }
 
 .botao2 {
-	border-radius: 20px;
-	padding: 5px 10px;
 	margin: 13px 0px;
-	border-width: 2px;
-	border-color: #a844fc;
-	border-style: solid;
-	background-color: #ffff;
+	font-weight:bold;
+	font-size: 18px;
 }
 
 .botao1:hover {
@@ -131,6 +130,7 @@ body {
 .texto-login-cadastro {
 	font-size: 14px;
 	line-height: 0.9;
+	margin-top: 14px;
 }
 
 .img-login-cadastro {
