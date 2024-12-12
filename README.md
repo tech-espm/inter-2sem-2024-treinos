@@ -19,7 +19,26 @@
 
 ## Descrição do Projeto
 
-Descrição do projeto, incluindo o problema original, e o objetivo final. Pode ser em mais de um parágrafo.
+O mercado de saúde e bem-estar tem se encaminhando para uma significativa expansão,
+impulsionada pela crescente conscientização sobre os benefícios de um estilo de vida saudável
+e pela popularidade de soluções digitais que promovem a prática de exercícios físicos. Nesse
+contexto, plataformas online têm se estruturado como ferramentas acessíveis e práticas para
+atender a diferentes perfis de usuários, desde iniciantes até praticantes avançados. A demanda
+por treinos personalizados, que respeitem os gostos individuais de cada usuário, destaca-se
+como uma tendência relevante, reforçando a necessidade de soluções tecnológicas que
+combinem acessibilidade, diversidade de modalidades e personalização.
+
+Este trabalho propõe o desenvolvimento de um site de treinos online, projetado para
+oferecer um serviço amplo, integrando modalidades como musculação, calistenia,
+alongamentos, entre outros. Alinhado aos Objetivos de Desenvolvimento Sustentável (ODS),
+especialmente o ODS 3, que trata de saúde e bem-estar e a ODS 10 de redução à desigualdade,
+o projeto busca promover o acesso a práticas físicas inclusivas, atendendo tanto às necessidades
+de quem frequenta academias quanto de indivíduos que não apresentam condições para
+frequentar academias, ou não gostam do ambiente.
+
+Com funcionalidades personalizadas e acessíveis, estratégias de monetização por
+anúncio e planos premium, o projeto representa uma oportunidade para investimento e inovação
+na área de saúde e bem-estar digital.
 
 # Detalhes de Configuração
 
